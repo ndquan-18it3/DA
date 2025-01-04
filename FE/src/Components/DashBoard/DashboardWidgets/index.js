@@ -322,8 +322,8 @@ function DashboardWidgets({ url }) {
       shop: {
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzeqIvRaVq68013nRoOCQAoezYI4nnpPDUG2eiVTbJ7egWB0zwqrhHR2FYnIykkwbEKg&usqp=CAU",
-        address: "68 Lý Thường Kiệt - Tam Đảo - Đà Nẵng",
-        name: "Phạm Công Tuấn Shop",
+        address: "Ngũ Hành Sơn - Đà Nẵng",
+        name: "Nguyễn Đức Quân Shop",
         evaluate: 73000,
         response_rate: 35,
         response_time: 2,
