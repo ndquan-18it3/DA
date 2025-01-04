@@ -31,14 +31,14 @@ export default function Footer() {
                         <div className="footer__title">Support call center</div>
                         <div className="footer__content">
                             <p>
-                                Order contact<strong>0397348149</strong>
+                                Order contact<strong>0376041xxx</strong>
                             </p>
                             <p>
-                                Order inquiries<strong>0397348149</strong>
+                                Order inquiries<strong>0376041xxx</strong>
                             </p>
                             <p>
                                 Suggestions, complaints
-                                <strong>0397348149</strong>
+                                <strong>0376041xxx</strong>
                             </p>
                         </div>
                     </div>
