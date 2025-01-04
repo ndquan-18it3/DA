@@ -339,8 +339,8 @@ function ProductDesInsert(props) {
   const handleRenderUIInputSelectDemo = () => {
     if (product_config.status === "update") {
       const inputConfigSelectConfig = [
-        ...value.defaultTitle,
-        ...value.descTitle[0],
+        ...value?.defaultTitle,
+        ...value?.descTitle?.[0],
       ];
       return demoInputSelectUI(inputConfigSelectConfig);
     } else {
@@ -353,8 +353,8 @@ function ProductDesInsert(props) {
       const arrayCheck = [];
       if (product_config.status === "update") {
         const inputConfigSelectConfig = [
-          ...value.defaultTitle,
-          ...value.descTitle[0],
+          ...value?.defaultTitle,
+          ...value?.descTitle?.[0],
         ];
         arrayCheck.push(inputConfigSelectConfig);
       } else {
@@ -794,11 +794,11 @@ function ProductDesInsert(props) {
                         status: product_config.status,
                       })
                     }
-                    disabled={
-                      product_config.status === "update"
-                        ? !isEdit
-                        : !isCheckCreate
-                    }
+                    // disabled={
+                    //   product_config.status === "update"
+                    //     ? !isEdit
+                    //     : !isCheckCreate
+                    // }
                   >
                     <Link to={handleLinkUpdateProduct()}>
                       {product_config.status === "update"

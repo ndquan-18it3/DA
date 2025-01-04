@@ -51,14 +51,14 @@ const TableProduct = forwardRef((props, ref) => {
                     <td style={{ width: 100 }}>
                         <img
                             alt={index}
-                            src={item.varation[0].image || ''}
+                            src={item?.varation?.[0]?.image || ''}
                             style={{ width: '100%' }}
                         />
                     </td>
                     <td className="name td-text">
                         <p>{item.name}</p>
                     </td>
-                    <td className="name">{item.description.trademark}</td>
+                    <td className="name">{item?.description?.trademark}</td>
                     <td className="name price">
                         {numberWithCommas(item.price)}
                         <sup> đ</sup>

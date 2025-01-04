@@ -114,8 +114,6 @@ function DashboardWidgets({ url }) {
   const [arrayData, setArrayData] = useState(null);
   const indexOfLastProducts = currentPage * productsPerPage;
   const indexOfFirstProducts = indexOfLastProducts - productsPerPage;
-  const currentProducts =
-    productsDB && productsDB.slice(indexOfFirstProducts, indexOfLastProducts);
   const [isShowProductDes, setIsShowProductDes] = useState("list");
   const [isShowCategoryOptions, setIsShowCategoryOptions] = useState(true);
   const [isShow, setIsShow] = useState(false);

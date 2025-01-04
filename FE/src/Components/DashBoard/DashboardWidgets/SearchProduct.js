@@ -43,7 +43,7 @@ export default function CompleteSearch(props) {
                           >
                               <div className="search-image-product">
                                   <img
-                                      src={item.varation[0].image || ''}
+                                      src={item?.varation?.[0]?.image || ''}
                                       alt={item.name}
                                   />
                               </div>

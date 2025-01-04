@@ -87,21 +87,25 @@ export default function useDeployContractToTruffle() {
   }, [user, token]);
 
   const loadWeb3 = async () => {
-    if (window.ethereum) {
-      await window.ethereum.enable();
-      return (window.web3 = new Web3(window.ethereum));
-    } else if (window.web3) {
-      return (window.web3 = new Web3(window.web3.currentProvider));
-    } else {
-      window.alert(
-        "Non-Ethereum browser detected. You should consider trying MetaMask!"
-      );
-      return null;
+    try {
+      if (window.ethereum) {
+        await window.ethereum.enable();
+        return (window.web3 = new Web3(window.ethereum));
+      } else if (window.web3) {
+        return (window.web3 = new Web3(window.web3.currentProvider));
+      } else {
+        window.alert(
+          "Non-Ethereum browser detected. You should consider trying MetaMask!"
+        );
+        return null;
+      }
+    } catch (error) {
+      
     }
   };
-  if (auth.user?.loginDomain !== "cryptoWallet") {
-    message.warning("Bạn chưa đăng nhập bằng ví điện tử của mình!");
-    return null;
-  }
+  // if (auth.user?.loginDomain !== "cryptoWallet") {
+  //   message.warning("Bạn chưa đăng nhập bằng ví điện tử của mình!");
+  //   return null;
+  // }
   return null;
 }
