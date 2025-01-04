@@ -61,8 +61,8 @@ app.use(function (req, res, next) {
   res.header(
     "Access-Control-Allow-Origin",
     process.env.NODE_ENV !== "production"
-      ? ["http://13.251.59.19:31112"]
-      : ["https://buihoanglong19012001.netlify.app/"]
+      ? [process.env.CLIENT_URL]
+      : [process.env.CLIENT_URL]
   );
 
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE");

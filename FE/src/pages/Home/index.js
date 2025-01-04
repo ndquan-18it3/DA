@@ -102,8 +102,8 @@ export default function Home() {
     const result = [];
 
     if (products_api.products) {
-      products_api.products.forEach((item) => {
-        if (item.description.trademark) {
+      products_api?.products?.forEach((item) => {
+        if (item?.description?.trademark) {
           const found = result.some(
             (el) => el.title === item.description.trademark.toLowerCase()
           );

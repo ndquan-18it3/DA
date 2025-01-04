@@ -39,10 +39,10 @@ function ProductCart(props) {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         img.setAttribute(
-          "src",
-          image ? image[0].image[0]?.data || DefaultImg : ""
-        );
-        img.classList.add("active");
+            "src",
+            image ? image?.[0]?.image?.[0]?.data || DefaultImg : ""
+          );
+          img.classList.add("active");
       }
     });
 
